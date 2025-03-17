@@ -7,16 +7,23 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
 </head>
-<body class="bg-green-100 flex flex-col justify-center items-center h-screen md: h-screen lg: flex-row">
+<body class="bg-green-100 flex flex-col justify-center items-center h-screen md: h-screen lg: flex">
     
 <div class="bg-gray-600 flex-col rounded-lg h-[500px] w-[350px] border-2 flex  items-center ">
     <div>
-        <input id="input" class="w-56 bg-gray-200 mt-10 h-10" type="text">
+        <input id="input" class="w-70 bg-gray-200 mt-10 h-10" type="text">
     </div>
 
 
-    <div class="grid grid-cols-3 gap-4 p-4 mt-10 md: ">
-  <div id="clear" class=" bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">C/CE</div>
+    <div class="grid grid-cols-4 gap-4 p-4 mt-10 md: ">
+  <div id="clear" class=" bg-red-500 text-white border-1  font-bold rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">C/CE</div>
+  <div id="del" class=" text-white font-bold bg-red-500 border-1 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">del</div>
+   <div id="square" class=" bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">  x²</div>
+    <div id="button" class=" bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">%</div>
+  <div id="button" class=" bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">(</div>
+     <div id="button" class=" bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">)</div>
+        <div id="root" class=" bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">√</div>
+
   
      <div id="button" class="bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">9</div>
      <div id="button" class="bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">8</div>
@@ -27,16 +34,20 @@
      <div id="button" class="bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">4</div>
    
       <div id="button" class="bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">3</div>
-     <div id="button" class=" bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">3</div>
-    <div id="button" class="bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">2</div>
-     <div id="button" class="bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">1</div>
-      <div id="button" class="  bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">0</div>
-     <div id="del" class=" bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">del</div>
-    <div id="cal" class="bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">=</div>
+     <div id="button" class=" bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">2</div>
+    <div id="button" class="bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">1</div>
+     <div id="button" class="bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">0</div>
+      <div id="button" class="  bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">.</div>
+     
+    
      <div id="button" class="bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">+</div>
      <div id="button" class=" bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">-</div>
-     <div id="button" class=" bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center"> &divide;</div>
-     <div id="button" class=" bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">x</div>
+     <div id="button" class=" bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">/</div>
+     <div id="button" class=" bg-white border-2 rounded-lg w-16 p-4 w-10 h-6 flex justify-center items-center">*</div>
+     
+     
+      <div id="cal" class="bg-red-500 text-white font-bold border-1 rounded-lg w-36 p-4 w-10 h-6 flex justify-center items-center">=</div>
+    
 
     
 </div>
@@ -52,7 +63,7 @@
 
    
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.0.0/math.min.js"></script>
     <script src="script.js">
    
     </script>
